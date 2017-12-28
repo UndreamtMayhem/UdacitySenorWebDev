@@ -14,12 +14,12 @@
 <body>
     <nav class="app-nav navbar-toggleable-sm">
         <div>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarmenu" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-        </button>
-        <h4 class="nav-logo">Find-Events</h4>
-    </div>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarmenu" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <h4 class="nav-logo">Find-Events</h4>
+        </div>
         <div class="hamburger collapse" id="navbarmenu">
             <ul class="nav-right navbar-nav mr-auto">
                 <li class="nav-item active">
@@ -67,38 +67,56 @@
         <div class="jumbotron-content">
             <div class="box">
                 <h1>Meet Others</h1>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet pariatur magni repellat harum reprehenderit! Vel, pariatur. Non, dignissimos totam vero porro maxime voluptatum aliquid animi, modi perspiciatis et ullam necessitatibus.</p>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet pariatur magni repellat harum reprehenderit!
+                    Vel, pariatur. Non, dignissimos totam vero porro maxime voluptatum aliquid animi, modi perspiciatis et
+                    ullam necessitatibus.</p>
                 <a class="btn btn-primary" href="/">Sign Up</a>
             </div>
         </div>
     </div>
-    <!--    
     <form class="search-container container" action="/" method="post">
-        <div class="icon">
-            <i class="fa fa-search" aria-hidden="true"> </i>
-            <p>Find me: Things to do</p>
-        </div>
         <div class="d-flex flex-wrap">
             <div class="form-group resized-input">
                 <input class="form-control" id="state" type="text" aria-describedby="state" placeholder="US State">
             </div>
             <div class="form-group resized-input">
-                <select class="form-control" id="activity-type">
-                    <option>All (Activities) </option>
-                    <option>Restaurants </option>
-                    <option>Bars </option>
-                    <option>Music &amp; Nightlife </option>
-                    <option>Movies </option>
-                    <option>Hotels </option>
-                    <option>Villas </option>
-                </select>
+                <!-- Example single danger button -->
+                <div class="btn-group">
+                    <p>within</p>
+                    <a class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                            10 miles
+                    </a>
+                    <!-- on click use js to edit this field-->
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="bottom-row">
-            <input class="btn btn-primary" type="button" name="reset" value="Reset">
-            <input class="btn btn-primary" id="submitBars" type="button" name="submit" value="Submit">
-        </div>
+            <div class="form-group resized-input">
+                    <!-- Example single danger button -->
+                    <div class="btn-group">
+                        <p>of</p>
+                        <a class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                                Camborne, United Kingdom
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">a</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </div>
+                </div>
+            <div class="bottom-row">
+                <input class="btn btn-primary" id="submitBars" type="button" name="submit" value="Submit">
+            </div>
     </form>
+    <!--
     <div class="results d-flex container" id="searchresults"></div>
 -->
     <!-- display saved bars-->
