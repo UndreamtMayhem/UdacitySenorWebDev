@@ -120,22 +120,22 @@ $gray-light:                #636c72 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
-
-
-
 // Material design colors
-$brand-nav: #313030;
-$brand-subheading: #3b3a3a;
-$brand-subheading-1: #454343;
-$brand-subheading-2: #4e4d4d;
-$brand-subheading-3: #585656;
-$brand-neutral: #626060;
-$brand-background-light: #f6f5f5;
-$brand-background-light-1: #e0dfdf;
-$brand-background-light-2: #c0bfbf;
-$brand-background-light-3: #a19f9f;
-$brand-background-light-4: #827f7f;
-$brand-footer: #313030;
+$brand-main: #9C27B0;
+$brand-50: #F3E5F5;
+$brand-100: #E1BEE7;
+$brand-200: #CE93D8;
+$brand-300: #BA68C8;
+$brand-400: #AB47BC;
+$brand-500: #9C27B0;
+$brand-600: #8E24AA;
+$brand-700: #7B1FA2;
+$brand-800: #6A1B9A;
+$brand-900: #4A148C;
+$brand-A100: #EA80FC;
+$brand-A200: #E040FB;
+$brand-A400: #D500F9;
+$brand-A700: #AA00FF;
 
 
 
@@ -273,7 +273,7 @@ $grid-gutter-widths: (
 // Fonts
 //
 // Font, line-height, and color for body text, headings, and more.
-;
+
 
 
 $font-family-sans-serif: 'Allerta', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
