@@ -1,48 +1,65 @@
 
-//cyan
-//$nav-color: #2196F3;
-$logo-color: #e91e63;
-$search-box-color: #5d34a4;
+//$logo-color: #e91e63;
+//$search-box-color: #5d34a4;
+$title-color: #673AB7;
 .app-nav {
   @extend .navbar;
-  padding: 0px 30px;
   background-color: $white;
   border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0px;
+}
+.fa-bars {
+  color:  $gray-light;
+  font-size: 20px;
 }
 .nav-logo {
   @extend .navbar-brand;
-  color: #673AB7;
-  font-family: 'Allerta', sans-serif;
-  font-size: 35px;
-  width: 250px;
+  color: $title-color;
+  font-family: 'Trocchi', sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  line-height: normal;
+  padding: 0px;
 }
-//
+
+.hamburger {
+  @extend .collapse;
+  @extend .navbar-collapse;
+  width: auto!important;
+}
+
 .nav-right {
   @extend .navbar-nav;
-  //@extend .d-flex;
-  //flex-direction: row;
-
-  //align-items:flex-end;
-  //flex-wrap: wrap;
   padding: 10px;
-  a, i {
-    color: #fff;
+  a {
+    color: $gray-light;
     padding-right: 12px;
-    font-size: 30px;
+    font-size: 19px;
     text-decoration: none;
   }
   li {
     padding-right:  15px;
-    padding-top: 15px;
+    padding-top: 0px;
+  }
+  .select-item {
+    padding-top: 2px;
+  }
+  .active a {
+    color: $title-color;
   }
 }
-
+.navbar-toggler-right{
+  right:3.2rem;
+}
 
 
 
 
 .jumbotron {
-  background: url('/src/img/background.jpg');
+  //background: url('http://placeimg.com/1200/900/nature/sepia');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

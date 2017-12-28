@@ -12,43 +12,56 @@
 </head>
 
 <body>
-    <nav class="app-nav navbar-toggleable-md">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarmenu"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <nav class="app-nav navbar-toggleable-sm">
+        <div>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarmenu" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
-        <h4 class="nav-logo">Nightlife </h4>
+        <h4 class="nav-logo">Find-Events</h4>
+    </div>
 
-        <div class="collapse navbar-collapse" id="navbarmenu">
-                <ul class="nav-right navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Create Event
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                                <select class="custom-select">
-                                        <option selected>Open this select menu</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                      </select>
-                        </li>
-                        <li class="nav-item">
-                                <a class="nav-link" href="#">Login
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                    <a class="nav-link" href="#">Sign Up
-                                    </a>
-                                </li>
-                    </ul>
+        <div class="hamburger collapse" id="navbarmenu">
+            <ul class="nav-right navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Create Event
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item select-item">
+                    <!-- changes route to index page  in the users language -->
+                    <select class="custom-select">
+                        <option value="en-AU">English (UK)</option>
+                        <option value="en-AU">English (Australia)</option>
+                        <option value="en-AU">English (USA)</option>
+                        <option value="de-DE">Deutsch</option>
+                        <option value="es">Español</option>
+                        <option value="es-ES">Español (España)</option>
+                        <option value="fr-FR">Français</option>
+                        <option value="it-IT">Italiano</option>
+                        <option value="nl-NL">Nederlands</option>
+                        <option value="pl-PL">Polski</option>
+                        <option value="pt-BR">Português</option>
+                        <option value="tr-TR">Türkçe</option>
+                        <option value="ru-RU">Русский</option>
+                        <option value="th-TH">ไทย</option>
+                        <option value="ja-JP">日本語</option>
+                        <option value="ko-KR">한국어</option>
+                    </select>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign Up
+                    </a>
+                </li>
+            </ul>
 
 
 
 
-        </div>
-        
         </div>
     </nav>
 
