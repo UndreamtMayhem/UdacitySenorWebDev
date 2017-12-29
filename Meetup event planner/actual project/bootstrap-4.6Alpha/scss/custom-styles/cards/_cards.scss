@@ -1,0 +1,52 @@
+.search-sort{
+    p {
+        padding-right: 3px;
+    }
+}
+
+.card-deck :not(:last-child).card {
+    margin: 0px;
+}
+.card-deck :not(:first-child).card {
+    margin: 0px;
+}
+
+.place {
+    margin-right: 10px!important;
+    margin-bottom: 10px!important;
+    max-width: 300px;
+    min-width: 300px;
+
+}
+
+
+.card-header {
+    background-color: transparent;
+    border-bottom: 1px solid #e8e8e8;
+
+}
+.card-block {
+    padding-top: 0px;
+    .card-text {
+        font-size: 15px;
+    }
+}
+.user-avatar {
+    width: 50px;
+    height: 50px;
+}
+.user-info {
+    padding-left: 15px;
+    h5 {
+        margin: 0px;
+        padding: 0px;
+    }
+    p {
+        margin: 0px;
+        padding: 0px;
+    }
+}
+// Small devices (landscape phones, 576px and up)
+@include media-breakpoint-up(sm) {
+
+}
