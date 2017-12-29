@@ -1,8 +1,7 @@
 
 // TODO make variable for each class
 
-//$logo-color: #e91e63;
-//$search-box-color: #5d34a4;
+
 $title-color: #673AB7;
 .app-nav {
   @extend .navbar;
@@ -55,37 +54,4 @@ $title-color: #673AB7;
 }
 .navbar-toggler-right{
   right:3.2rem;
-}
-
-
-
-
-.search-container {
-  background-color: rgba(233,14,98,1);
-  border: 1px solid black;
-  @extend .d-flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-bottom: 15px;
-  padding: 30px;
-  .icon {
-    align-items: baseline;
-    color: white;
-    @extend .d-flex;
-    font-size: 22px;
-      .fa {
-        padding-right: 10px;
-      }
-    }
-    .bottom-row {
-      input {
-        margin-right: 20px;
-      }
-  }
-  div {
-    padding-right: 10px;
-  }
-  .resized-input {
-    min-width: 250px;
-  }
 }
