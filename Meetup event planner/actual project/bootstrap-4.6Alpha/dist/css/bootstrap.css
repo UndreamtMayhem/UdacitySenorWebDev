@@ -8706,73 +8706,53 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   margin: 0px;
 }
 
-.place {
+.card-event {
   margin-right: 10px !important;
   margin-bottom: 10px !important;
   max-width: 300px;
   min-width: 300px;
 }
 
-.card-header {
+.card-event .card-header {
   background-color: transparent;
   border-bottom: 1px solid #e8e8e8;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   padding: 6px 10px 2px;
 }
 
-.card-event-host {
-  padding: 2px;
-}
-
-.event-title {
-  padding-top: 5px;
-}
-
-.event-title i {
-  float: right;
-}
-
-.card-block {
-  padding-top: 0px;
-}
-
-.card-block .card-text {
-  font-size: 15px;
-}
-
-.user-avatar {
-  width: 25px;
+.card-event .card-header .user-avatar {
+  border-radius: 50%;
   height: 25px;
+  max-width: 100%;
+  width: 25px;
 }
 
-.user-info {
+.card-event .card-header .user-info {
   padding-left: 15px;
   width: 100%;
 }
 
-.user-info h5 {
-  margin: 0px;
-  padding: 0px;
-}
-
-.user-info p {
-  margin: 0px;
-  padding: 0px;
-}
-
-.event-description {
-  font-size: 13px;
+.card-event .card-header .user-info .event-title {
   padding-top: 5px;
 }
 
-.card-banner {
-  background-color: black;
-  color: fff;
+.card-event .card-header .user-info .event-title i {
+  color: #636c72;
+  float: right;
+}
+
+.card-event .card-banner {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
   height: auto;
   padding: 10px;
   text-align: center;
 }
 
-.card-banner ul {
+.card-event .card-banner ul {
   color: white;
   display: -webkit-box;
   display: -webkit-flex;
@@ -8786,12 +8766,32 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   padding: 0px;
 }
 
-.card-banner ul li {
+.card-event .card-banner ul li {
   list-style: none;
 }
 
-.card-banner ul p {
+.card-event .card-banner ul p {
   margin-bottom: 0px;
+}
+
+.card-event .card-image {
+  height: 280px;
+  width: 100%;
+}
+
+.card-event .card-block {
+  padding-top: 0px;
+  text-align: center;
+}
+
+.card-event .card-block .card-text {
+  font-size: 15px;
+}
+
+.card-event .card-block .event-description {
+  color: #636c72;
+  font-size: 13px;
+  padding-top: 10px;
 }
 
 .results {
@@ -9030,6 +9030,31 @@ footer .bottom-footer {
   padding: 20px 0 10px 0;
 }
 
+.social-button-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-button-group .fa-social-border {
+  border: 1px solid #313030;
+}
+
+.fa-social {
+  border-radius: 50%;
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+  color: white;
+  margin-right: 7px;
+  text-align: center;
+  text-decoration: none;
+}
+
 .fa-social-sm {
   font-size: 17px;
   padding: 9px;
@@ -9042,68 +9067,22 @@ footer .bottom-footer {
   width: 45px;
 }
 
-.btn-floating {
-  background-color: #4A148C;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
-  color: white;
-  margin: -58px 11px 5px auto;
-  text-align: center;
-  text-decoration: none;
-  font-size: 17px;
-  padding: 7px;
-  width: 40px;
-}
-
-.btn-floating i {
-  color: white;
-}
-
-.social-button-group {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  /* Facebook */
-  /* Twitter */
-  /* GooglePlus */
-}
-
-.social-button-group .fa-social-border {
-  border: 1px solid #313030;
-}
-
-.social-button-group .fa-social {
-  border-radius: 50%;
-  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
-  color: white;
-  margin-right: 7px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.social-button-group .fa-facebook {
+.fa-facebook {
   background: #3B5998;
   color: white;
 }
 
-.social-button-group .fa-twitter {
+.fa-twitter {
   background: #55ACEE;
   color: white;
 }
 
-.social-button-group .fa-google {
+.fa-google {
   background: #dd4b39;
   color: white;
 }
 
-.social-button-group .fa-instagram {
+.fa-instagram {
   background-image: -webkit-gradient(linear, left bottom, left bottom, color-stop(0, #7372FF), color-stop(0, #E1306B), color-stop(1, #FFDB80), color-stop(1, #FCB045), color-stop(1, #F77737), color-stop(1, #F77737), color-stop(1, #F56140), color-stop(1, #FD1D1D));
   background-image: -o-linear-gradient(left bottom, #7372FF 0%, #E1306B 0%, #FFDB80 100%, #FCB045 100%, #F77737 100%, #F77737 100%, #F56140 100%, #FD1D1D 100%);
   background-image: -webkit-linear-gradient(left bottom, #7372FF 0%, #E1306B 0%, #FFDB80 100%, #FCB045 100%, #F77737 100%, #F77737 100%, #F56140 100%, #FD1D1D 100%);
@@ -9114,10 +9093,28 @@ footer .bottom-footer {
   color: white;
 }
 
-.social-button-group .fa-snapchat-ghost {
+.fa-snapchat-ghost {
   background: #fffc00;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.btn-floating {
+  background-color: #4A148C;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+  color: white;
+  margin: -91px 11px 10px auto;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 7px;
+  width: 40px;
+}
+
+.btn-floating i {
+  color: white;
 }
 
 .badge-time {
