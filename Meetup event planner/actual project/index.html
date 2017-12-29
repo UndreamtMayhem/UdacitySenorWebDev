@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>Meetup Planner</title>
@@ -10,7 +9,6 @@
     <link rel="stylesheet" href="./bootstrap-4.6Alpha/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Allerta|Trocchi" rel="stylesheet">
 </head>
-
 <body>
     <nav class="app-nav navbar-toggleable-sm">
         <div>
@@ -57,10 +55,6 @@
                     </a>
                 </li>
             </ul>
-
-
-
-
         </div>
     </nav>
     <div class="jumbotron jumbotron-fluid">
@@ -115,69 +109,162 @@
             </div>
         </div>
     </form>
-    <!--
-    <div class="results d-flex container" id="searchresults"></div>
--->
-
-    <div class="card-deck">
-        <div class="card">
-            <div class="card-header">
-                <img class="img-fluid rounded-circle" src="http://placeimg.com/50/50/any/grayscale" width="50" alt="Card image cap">
-                <h4 class="card-title">Host</h4>
-                <p class="card-text text-muted">Guest</p>
-            </div>
-            <div class="card-block">
-                <h4 class="card-title">Host</h4>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content
-                    is a little bit longer.</p>
-                <h4 class="card-title">Event Starts: 28/12/2017</h4>
-                <i class="fa fa-clock-o" aria-hidden="true"></i>
-                <span class="badge badge-default">5:30</span>
-                <span>to</span>
-                <span class="badge badge-default">7:30</span>
-                <a href="#" class="card-link">Attend</a>
+    <section class="search-results">
+        <div class="btn-group search-sort">
+            <p class="">Sort By</p>
+            <a class="link-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                Best Match
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+                <div class="resized-input">
+                    <input class="form-control" id="zipcode" type="text" aria-describedby="zipcode" placeholder="zipcode">
+                </div>
             </div>
         </div>
-        <div class="card">
-            <div class="card-header">
-                <img class="img-fluid rounded-circle" src="http://placeimg.com/50/50/any/grayscale" width="50" alt="Card image cap">
-                <h4 class="card-title">Host</h4>
-                <p class="card-text text-muted">Guest</p>
+        <div class="card-deck" id="searchresults">
+            <div class="card card-event">
+                <div class="card-header">
+                    <img class="user-avatar" src="http://placeimg.com/50/50/any/grayscale" alt="avatar">
+                    <div class="user-info">
+                        <h6 class="event-title">
+                            <strong>Pokemon Meetup</strong>
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        </h6>
+                    </div>
+                </div>
+                <img class="card-image" src="http://placeimg.com/500/500/any/grayscale" alt="avatar">
+                <a class="btn-floating">
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+                <div class="card-banner">
+                    <ul>
+                        <li>
+                            <p>
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                28/12/2017
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <span class="badge badge-time">5:30</span>
+                                <span>to</span>
+                                <span class="badge badge-time">7:30</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="card-text">100
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-block">
+                    <p class="event-description">This is a longer card with supporting text below as a natural lead-in to additional content. This content
+                        is a little bit longer.</p>
+                    <div class="social-button-group">
+                        <a class="fa fa-facebook fa-social fa-social-sm" href="https://twitter.com/undreamtmayhem"></a>
+                        <a class="fa fa-twitter fa-social fa-social-sm" href="https://twitter.com/undreamtmayhem"></a>
+                        <a class="fa fa-google fa-social fa-social-sm" href="https://plus.google.com/117941782116734110521"> </a>
+                    </div>
+                </div>
             </div>
-            <div class="card-block">
-                <h4 class="card-title">Host</h4>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content
-                    is a little bit longer.</p>
-                <h4 class="card-title">Event Starts: 28/12/2017</h4>
-                <i class="fa fa-clock-o" aria-hidden="true"></i>
-                <span class="badge badge-default">5:30</span>
-                <span>to</span>
-                <span class="badge badge-default">7:30</span>
-                <a href="#" class="card-link">Attend</a>
+            <div class="card card-event">
+                <div class="card-header">
+                    <img class="user-avatar" src="http://placeimg.com/50/50/any/grayscale" alt="avatar">
+                    <div class="user-info">
+                        <h6 class="event-title">
+                            <strong>Pokemon Meetup</strong>
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        </h6>
+                    </div>
+                </div>
+                <img class="card-image" src="http://placeimg.com/500/500/any/grayscale" alt="avatar">
+                <a class="btn-floating">
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+                <div class="card-banner">
+                    <ul>
+                        <li>
+                            <p>
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                28/12/2017
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <span class="badge badge-time">5:30</span>
+                                <span>to</span>
+                                <span class="badge badge-time">7:30</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="card-text">100
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-block">
+                    <p class="event-description">This is a longer card with supporting text below as a natural lead-in to additional content. This content
+                        is a little bit longer.</p>
+                    <div class="social-button-group">
+                        <a class="fa fa-facebook fa-social fa-social-sm" href="https://twitter.com/undreamtmayhem"></a>
+                        <a class="fa fa-twitter fa-social fa-social-sm" href="https://twitter.com/undreamtmayhem"></a>
+                        <a class="fa fa-google fa-social fa-social-sm" href="https://plus.google.com/117941782116734110521"> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-event">
+                <div class="card-header">
+                    <img class="user-avatar" src="http://placeimg.com/50/50/any/grayscale" alt="avatar">
+                    <div class="user-info">
+                        <h6 class="event-title">
+                            <strong>Pokemon Meetup</strong>
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        </h6>
+                    </div>
+                </div>
+                <img class="card-image" src="http://placeimg.com/500/500/any/grayscale" alt="avatar">
+                <a class="btn-floating">
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+                <div class="card-banner">
+                    <ul>
+                        <li>
+                            <p>
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                28/12/2017
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <span class="badge badge-time">5:30</span>
+                                <span>to</span>
+                                <span class="badge badge-time">7:30</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="card-text">100
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-block">
+                    <p class="event-description">This is a longer card with supporting text below as a natural lead-in to additional content. This content
+                        is a little bit longer.</p>
+                    <div class="social-button-group">
+                        <a class="fa fa-facebook fa-social fa-social-sm" href="https://twitter.com/undreamtmayhem"></a>
+                        <a class="fa fa-twitter fa-social fa-social-sm" href="https://twitter.com/undreamtmayhem"></a>
+                        <a class="fa fa-google fa-social fa-social-sm" href="https://plus.google.com/117941782116734110521"> </a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="card">
-            <div class="card-header">
-                <img class="img-fluid rounded-circle" src="http://placeimg.com/50/50/any/grayscale" width="50" alt="Card image cap">
-                <h4 class="card-title">Host</h4>
-                <p class="card-text text-muted">Guest</p>
-            </div>
-            <div class="card-block">
-                <h4 class="card-title">Host</h4>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content
-                    is a little bit longer.</p>
-                <h4 class="card-title">Event Starts: 28/12/2017</h4>
-                <i class="fa fa-clock-o" aria-hidden="true"></i>
-                <span class="badge badge-default">5:30</span>
-                <span>to</span>
-                <span class="badge badge-default">7:30</span>
-                <a href="#" class="card-link">Attend</a>
-            </div>
-        </div>
-    </div>
-    <!-- display saved bars-->
-    <!-- display attending bars-->
-    <!--
+    </section>
     <footer>
         <div class="footer-content">
             <div class="footer-links">
@@ -186,11 +273,11 @@
                 <p>Our Privacy Policy </p>
             </div>
             <div class="social-button-group">
-                <a class="fa fa-twitter fa-social" href="https://twitter.com/undreamtmayhem"> </a>
-                <a class="fa fa-facebook fa-social" href="https://www.facebook.com/UndreamtMayhem"> </a>
-                <a class="fa fa-google fa-social" href="https://plus.google.com/117941782116734110521"> </a>
-                <a class="fa fa-instagram fa-social" href="https://www.instagram.com/undreamtmayhem/"> </a>
-                <a class="fa fa-snapchat-ghost fa-social" href="https://www.snapchat.com/add/undreamt-mayhem"> </a>
+                <a class="fa fa-twitter fa-social fa-social-md" href="https://twitter.com/undreamtmayhem"> </a>
+                <a class="fa fa-facebook fa-social fa-social-md" href="https://www.facebook.com/UndreamtMayhem"> </a>
+                <a class="fa fa-google fa-social fa-social-md" href="https://plus.google.com/117941782116734110521"> </a>
+                <a class="fa fa-instagram fa-social fa-social-md" href="https://www.instagram.com/undreamtmayhem/"> </a>
+                <a class="fa fa-snapchat-ghost fa-social fa-social-md" href="https://www.snapchat.com/add/undreamt-mayhem"> </a>
             </div>
             <div class="bottom-footer">
                 <p>Nightlife&copy;2017. All Rights Reserved
@@ -201,7 +288,7 @@
             </div>
         </div>
     </footer>
--->
+
     <script src="./jquery/dist/jquery.min.js"></script>
     <script src="./tether/dist/js/tether.min.js"></script>
     <script src="./bootstrap-4.6Alpha/dist/js/bootstrap.min.js"></script>
