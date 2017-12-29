@@ -8844,6 +8844,7 @@ footer .footer-content .social-button-group {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 15px;
 }
 
 footer .footer-content .social-button-group a {
@@ -8873,6 +8874,6 @@ footer .bottom-footer {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-  padding: 20px 0 10px 0;
+  padding: 10px 0;
 }
 /*# sourceMappingURL=bootstrap.css.map */
