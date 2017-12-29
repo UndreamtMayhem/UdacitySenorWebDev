@@ -8671,8 +8671,19 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   margin: 0px;
 }
 
+.search-results {
+  padding: 10px;
+}
+
 .search-sort p {
   padding-right: 3px;
+}
+
+.card-deck {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .card-deck :not(:last-child).card {
