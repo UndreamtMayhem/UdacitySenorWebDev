@@ -1,15 +1,13 @@
 
 .search-container {
     background-color: $brand-900;
-    border: 1px solid #e8e8e8;
+    //border: 1px solid #e8e8e8;
     color: white;
     margin-bottom: 15px;
     padding: 10px 10px;
     position: relative;
     top: auto;
     bottom: 50px;
-    //width: 80vw;
-
     .form-groups {
         @extend .d-flex;
         flex-wrap: wrap;
@@ -39,14 +37,11 @@
           margin-right: 20px;
         }
     }
-
     .resized-input {
-        padding-bottom: 5px;
+        padding-bottom: 10px;
         padding-right: 15px;
         .btn-group p {
             margin: 0px;
         }
-      //min-width: 250px;
     }
   }
-  
