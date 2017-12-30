@@ -8,14 +8,14 @@
     }
 }
 .social-button-group-row {
+    align-items: center;
     background-color: aliceblue;
     @include flex-prefixes;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 10px;
+    padding: 10px;
 }
-
-
 
 // social colors
 .facebook {

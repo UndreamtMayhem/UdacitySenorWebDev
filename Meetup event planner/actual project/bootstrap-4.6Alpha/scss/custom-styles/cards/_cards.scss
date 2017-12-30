@@ -14,10 +14,13 @@
 
 // Main container for a card about an event
 .card-event {
+    max-width: 300px;
+    min-width: 300px;
+}
+.card-event, .card-login {
     margin-right: 10px!important;
     margin-bottom: 10px!important;
-    max-width: 300px;
-    min-width: 300px; // Header for the card
+ // Header for the card
     .card-header {
         background-color: transparent;
         border-bottom: 1px solid #e8e8e8;
@@ -83,4 +86,11 @@
             padding-top: 10px;
         }
     }
+}
+
+// login
+
+
+.card-login {
+    margin-top: 5px;
 }
