@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="./bootstrap-4.6Alpha/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap-4.6Alpha/dist/css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css?family=Allerta|Trocchi" rel="stylesheet">
 </head>
 <body>
@@ -26,7 +26,7 @@
                     </a>
                 </li>
                 <li class="nav-item select-item">
-                    <!-- changes route to index page  in the users language -->
+                    <!-- changes route to index page in the users language -->
                     <select class="custom-select">
                         <option value="en-AU">English (UK)</option>
                         <option value="en-AU">English (Australia)</option>
@@ -57,24 +57,27 @@
             </ul>
         </div>
     </nav>
+
     <div class="jumbotron jumbotron-fluid">
         <div class="jumbotron-content">
             <div class="box">
                 <h1>Meet Others</h1>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet pariatur magni repellat harum reprehenderit!
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet pariatur magni repellat harum reprehenderit!
                     Vel, pariatur. Non, dignissimos totam vero porro maxime voluptatum aliquid animi, modi perspiciatis et
                     ullam necessitatibus.</p>
                 <a class="btn btn-primary" href="/">Sign Up</a>
             </div>
         </div>
     </div>
+
     <form class="search-container container" action="/" method="post">
         <div class="form-groups">
             <div class="resized-input">
+                <!-- need screen reader test -->
                 <input class="form-control" id="state" type="text" aria-describedby="hobby" placeholder="Hobby">
             </div>
             <div class="resized-input">
-                <div class="btn-group">
+                <div class="drop-down-container">
                     <p>within</p>
                     <a class="link-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
                         10 miles
@@ -92,13 +95,14 @@
                 </div>
             </div>
             <div class="resized-input">
-                <div class="btn-group">
+                <div class="drop-down-container">
                     <p>of</p>
                     <a class="link-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
                         Camborne, United Kingdom
                     </a>
                     <div class="dropdown-menu">
                         <div class="resized-input">
+                            <!-- use to read label-->
                             <input class="form-control" id="zipcode" type="text" aria-describedby="zipcode" placeholder="zipcode">
                         </div>
                     </div>
@@ -110,14 +114,14 @@
         </div>
     </form>
     <section class="search-results">
-        <div class="btn-group search-sort">
+        <div class="search-sort">
             <p class="">Sort By</p>
             <a class="link-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
                 Best Match
             </a>
             <div class="dropdown-menu dropdown-menu-right">
                 <div class="resized-input">
-                    <input class="form-control" id="zipcode" type="text" aria-describedby="zipcode" placeholder="zipcode">
+                    <input class="form-control" id="filter" type="text" aria-describedby="filter" placeholder="filter">
                 </div>
             </div>
         </div>
@@ -289,6 +293,6 @@
     <script src="./jquery/dist/jquery.min.js"></script>
     <script src="./tether/dist/js/tether.min.js"></script>
     <script src="./bootstrap-4.6Alpha/dist/js/bootstrap.min.js"></script>
-    <script src="./js/main.js"></script>
+    <!--<script src="./js/main.js"></script>-->
 </body>
 </html>

@@ -12,14 +12,15 @@
 
 // Reset and dependencies
 @import "normalize";
-@import "print";
+//@import "print";
 
 // Core CSS
 @import "reboot";
+
 @import "type";
-@import "images";
+//@import "images";
 //@import "code";
-@import "grid";
+//@import "grid";
 //@import "tables";
 @import "forms";
 @import "buttons";
@@ -27,8 +28,8 @@
 // Components
 @import "transitions";
 @import "dropdown";
-@import "button-group";
-@import "input-group";
+//@import "button-group";
+//@import "input-group";
 @import "custom-forms";
 @import "nav";
 @import "navbar";
@@ -37,11 +38,13 @@
 //@import "pagination";
 @import "badge";
 @import "jumbotron";
+// MIGHT NEED
 @import "alert";
 //@import "progress";
 //@import "media";
-@import "list-group";
-@import "responsive-embed";
+// THIS TAKES UP A LOT
+//@import "list-group";
+//@import "responsive-embed";
 @import "close";
 
 // Components w/ JavaScript
@@ -51,9 +54,12 @@
 //@import "carousel";
 
 // Utility classes
-@import "utilities";
+//@import "utilities";
 
 // Custom Styles
+
+
+@import "custom-styles/flex/_flex";
 // TODO eventually make all custom styles into one import
 @import "custom-styles/nav/_top-nav";
 @import "custom-styles/jumbotron/_jumbotron";

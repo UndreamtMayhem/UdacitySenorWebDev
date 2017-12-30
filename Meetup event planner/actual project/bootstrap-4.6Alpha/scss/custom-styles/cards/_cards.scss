@@ -21,7 +21,7 @@
     .card-header {
         background-color: transparent;
         border-bottom: 1px solid #e8e8e8;
-        display: flex;
+        @include flex-prefixes;
         padding: 6px 10px 2px;
         .user-avatar {
             border-radius: 50%;
@@ -55,13 +55,14 @@
             margin: 0px;
             padding: 0px;
             li {
-                list-style: none; //padding-right: 10px;
+                list-style: none;
             }
             p {
                 margin-bottom: 0px;
             }
         }
-    } // card main image
+    } 
+    // card main image
     .card-image {
         height: 280px;
         width: 100%;
