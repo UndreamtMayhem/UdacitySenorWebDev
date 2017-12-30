@@ -3,7 +3,7 @@ footer {
     color: hsl(0, 5%, 96%);
     padding-right: 20px;
     .footer-content {
-        display: flex;
+        @include flex-prefixes;
         flex-flow: column;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -20,7 +20,7 @@ footer {
             }
         }
         .social-button-group {
-            display: flex;
+            @include flex-prefixes;
             flex-wrap: wrap;
             justify-content: center;
             padding-bottom: 15px;
@@ -36,7 +36,7 @@ footer {
     }
     .bottom-footer {
         background-color: #AB158D;
-        display: flex;
+        @include flex-prefixes;
         flex-flow: row;
         flex-wrap: wrap;
         font-size: 12px;

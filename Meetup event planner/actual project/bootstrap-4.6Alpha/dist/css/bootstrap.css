@@ -3257,7 +3257,7 @@ button.close {
   width: 100%;
 }
 
-.card-event .card-block {
+.card-event .about-event {
   padding-top: 0px;
   text-align: center;
 }
@@ -3289,6 +3289,11 @@ button.close {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -3299,14 +3304,83 @@ button.close {
   border: 1px solid #313030;
 }
 
+.social-button-group-row {
+  background-color: aliceblue;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 10px;
+}
+
+.facebook {
+  background: #3B5998;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.instagram {
+  background-image: -webkit-gradient(linear, left bottom, left bottom, color-stop(0, #7372FF), color-stop(0, #E1306B), color-stop(1, #FFDB80), color-stop(1, #FCB045), color-stop(1, #F77737), color-stop(1, #F77737), color-stop(1, #F56140), color-stop(1, #FD1D1D));
+  background-image: -o-linear-gradient(left bottom, #7372FF 0%, #E1306B 0%, #FFDB80 100%, #FCB045 100%, #F77737 100%, #F77737 100%, #F56140 100%, #FD1D1D 100%);
+  background-image: -webkit-linear-gradient(left bottom, #7372FF 0%, #E1306B 0%, #FFDB80 100%, #FCB045 100%, #F77737 100%, #F77737 100%, #F56140 100%, #FD1D1D 100%);
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#7372FF), color-stop(0%, #E1306B), color-stop(100%, #FFDB80), color-stop(100%, #FCB045), color-stop(100%, #F77737), color-stop(100%, #F77737), color-stop(100%, #F56140), to(#FD1D1D));
+  background-image: -webkit-linear-gradient(right top, #7372FF 0%, #E1306B 0%, #FFDB80 100%, #FCB045 100%, #F77737 100%, #F77737 100%, #F56140 100%, #FD1D1D 100%);
+  background-image: -o-linear-gradient(right top, #7372FF 0%, #E1306B 0%, #FFDB80 100%, #FCB045 100%, #F77737 100%, #F77737 100%, #F56140 100%, #FD1D1D 100%);
+  background-image: linear-gradient(to left bottom, #7372FF 0%, #E1306B 0%, #FFDB80 100%, #FCB045 100%, #F77737 100%, #F77737 100%, #F56140 100%, #FD1D1D 100%);
+  color: white;
+}
+
+.snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
 .fa-social {
-  border-radius: 50%;
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
   color: white;
   margin-right: 7px;
   text-align: center;
   text-decoration: none;
+}
+
+.fa-social-icon {
+  color: white;
+  margin-bottom: 5px;
+  margin-right: 7px;
+  padding: 0 10px;
+  text-align: left;
+  text-decoration: none;
+  width: 200px;
+}
+
+.fa-social-icon a {
+  border-right: 1px solid #e8e8e8;
+}
+
+.fa-social-rnd {
+  border-radius: 50%;
 }
 
 .fa-facebook {
@@ -3339,6 +3413,11 @@ button.close {
   background: #fffc00;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.social-text {
+  font-size: 12px;
+  padding-left: 6px;
 }
 
 .btn-floating {
@@ -3374,8 +3453,11 @@ footer .footer-content {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-flex-flow: column;
       -ms-flex-flow: column;
           flex-flow: column;
@@ -3417,6 +3499,11 @@ footer .footer-content .social-button-group {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -3444,6 +3531,9 @@ footer .bottom-footer {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-flex-flow: row;
       -ms-flex-flow: row;
           flex-flow: row;
@@ -3455,5 +3545,29 @@ footer .bottom-footer {
       -ms-flex-pack: distribute;
           justify-content: space-around;
   padding: 10px 0;
+}
+
+.login-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-block {
+  padding: 0.2rem 1.25rem;
+}
+
+.alt-form-caption {
+  text-align: center;
 }
 /*# sourceMappingURL=bootstrap.css.map */
