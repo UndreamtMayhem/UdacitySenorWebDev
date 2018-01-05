@@ -7,6 +7,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
     <link rel="stylesheet" href="./bootstrap-4.6Alpha/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Allerta|Trocchi" rel="stylesheet">
 </head>
 <body>
@@ -74,42 +75,84 @@
         <div class="form-groups">
             <div class="resized-input">
                 <!-- need screen reader test -->
-                <input class="form-control" id="state" type="text" aria-describedby="hobby" placeholder="Hobby">
+                <input class="form-control" id="hobby" type="text" aria-describedby="hobby" placeholder="Hobby" required>
             </div>
             <div class="resized-input">
                 <div class="drop-down-container">
                     <p>within</p>
-                    <a class="link-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
-                        10 miles
+                    <a class="link-dropdown" id="distanceField" data-toggle="modal" data-target="#distanceModal" href="#">
+                        2 miles
                     </a>
-                    <!-- on click use js to edit this field-->
+                    <div class="modal fade" id="distanceModal" tabindex="-1" role="dialog" aria-labelledby="distanceModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="distanceModalLabel">Select the distance from your given location</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="resized-input">
+                                    <select id="distance">
+                                        <option class="dropdown-item">2 miles</option>
+                                        <option class="dropdown-item">5 miles</option>
+                                        <option class="dropdown-item">10 miles</option>
+                                        <option class="dropdown-item">25 miles</option>
+                                        <option class="dropdown-item">100 miles</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button id="setDistance" type="button" class="btn btn-primary">Set Distance</button>
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                    <!-- on option and select-->
                     <div class="dropdown-menu">
-                        <ul>
-                            <li class="dropdown-item">2 miles</li>
-                            <li class="dropdown-item">5 miles</li>
-                            <li class="dropdown-item">10 miles</li>
-                            <li class="dropdown-item">25 miles</li>
-                            <li class="dropdown-item">100 miles</li>
-                        </ul>
+                        
                     </div>
                 </div>
             </div>
             <div class="resized-input">
                 <div class="drop-down-container">
                     <p>of</p>
-                    <a class="link-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                    <a class="link-dropdown" data-toggle="modal" data-target="#placeModal" href="#">
                         Camborne, United Kingdom
                     </a>
-                    <div class="dropdown-menu">
-                        <div class="resized-input">
-                            <!-- use to read label-->
-                            <input class="form-control" id="zipcode" type="text" aria-describedby="zipcode" placeholder="zipcode">
+                    <div class="modal fade" id="placeModal" tabindex="-1" role="dialog" aria-labelledby="locationModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="locationModalLabel">Where should we find events for you?</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="resized-input">
+                                    <!-- use to read label-->
+                                    <input class="form-control" id="place" type="text" aria-describedby="place" placeholder="place" required>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button id="setLocation" type="button" class="btn btn-primary">Set Location</button>
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
                         </div>
-                    </div>
+                      </div>
+
+
                 </div>
             </div>
             <div class="bottom-row">
-                <input class="btn btn-outline-secondary" id="submit" type="button" name="submit" value="Submit">
+                <input class="btn btn-outline-secondary" id="submit" type="submit" name="submit" value="Submit">
             </div>
         </div>
     </form>
@@ -293,6 +336,12 @@
     <script src="./jquery/dist/jquery.min.js"></script>
     <script src="./tether/dist/js/tether.min.js"></script>
     <script src="./bootstrap-4.6Alpha/dist/js/bootstrap.min.js"></script>
-    <!--<script src="./js/main.js"></script>-->
+    <script src="https://unpkg.com/zangodb@latest/dist/zangodb.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.23.0/polyfill.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/form.js"></script>
+    <!--requires server <script src="./js/registerserviceworker.js"></script>-->
+    <!-- remove eventually and use getb request -->
+    <!--<script src="http://geoip.nekudo.com/api?callback=foo"></script>-->
 </body>
 </html>

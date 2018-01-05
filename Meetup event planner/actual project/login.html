@@ -67,20 +67,18 @@
                                 <strong>Log in</strong>
                                 <i class="fa fa-lock" aria-hidden="true"></i>
                                 <p>Not registered with us? <a href="/">Sign up</a></p>
-
                             </h6>
                         </div>
                     </div>
                     <div class="card-block login-block">
-                        <form>
+                        <form action="/" method="post">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Email address:</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                <div class="form-control-feedback">Success! You've done it.</div>           
+                                <label for="emailAddress">Email address:</label>
+                                <input type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp" required placeholder="Enter email" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$">
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Password:</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                <label for="password1">Password:</label>
+                                <input type="password" class="form-control" id="password1" placeholder="Password" required>
                                 <a href="">Forget your password?</a>
                             </div>
                             <div class="form-group row">
@@ -92,7 +90,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary">Log In</button>
+                            <button id="login" type="submit" class="btn btn-primary">Log In</button>
                         </form>
                         <h2 class="alt-form-caption">Or</h2>
 
@@ -140,6 +138,9 @@
         <script src="./jquery/dist/jquery.min.js"></script>
         <script src="./tether/dist/js/tether.min.js"></script>
         <script src="./bootstrap-4.6Alpha/dist/js/bootstrap.min.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/form.js"></script>
+
         <!--<script src="./js/main.js"></script>-->
 </body>
 
